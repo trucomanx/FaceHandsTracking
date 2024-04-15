@@ -5,9 +5,14 @@ import cv2
 from cvzone.HandTrackingModule import HandDetector
 from cvzone.FaceDetectionModule import FaceDetector
 
+
+
+
 cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=2)
 facedetector = FaceDetector()
+
+
 
 while True:
     success, img =cap.read();
